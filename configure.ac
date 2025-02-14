@@ -264,10 +264,6 @@ AC_CONFIG_FILES([Makefile
                  man/Makefile
                  src/Makefile
                  tests/Makefile
-                 tools/simple_hydrog/Makefile
-                 tools/simple_hydrog/postp/Makefile
-                 tools/simple_hydrog/lakes/Makefile
-                 tools/simple_hydrog/rmvpr/Makefile
                  t_gpu/Makefile
                  t_gpu/test_read_remap_file/Makefile
                  t_gpu/test_get_grid_cell_struct/Makefile

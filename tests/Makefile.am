@@ -31,7 +31,6 @@ LDADD = -L$(top_builddir)/src -lver $(NETCDF_LDFLAGS) $(NETCDF_LIBS)
 check_PROGRAMS = \
   create_5degree_topog \
   create_daily_tile_files \
-  create_hydro_glcc_file \
   create_land_remap_files \
   create_mask_topog \
   create_ocean_mask_grid \
@@ -56,9 +55,6 @@ TESTS_ENVIRONMENT = \
     skipflag=$(skipflag); export skipflag; \
     PREFIX=$(abs_top_builddir)/src; export PREFIX; \
     PKGLIBEXECDIR="$(abs_top_builddir)/src"; export PKGLIBEXECDIR; \
-    for d in $$( find $(abs_top_builddir)/tools -mindepth 1 -not -path '*/\.*' -type d ); do \
-      PATH="$$d"'$(PATH_SEPARATOR)'"$$PATH"; \
-    done; \
     PATH="$(abs_top_builddir)/src"'$(PATH_SEPARATOR)'"$$PATH"; export PATH;
 
 tools_tests = \

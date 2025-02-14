@@ -20,11 +20,7 @@
 ACLOCAL_AMFLAGS = -I m4
 
 SUBDIRS = lib \
-          src \
-          tools/simple_hydrog \
-          tools/simple_hydrog/postp \
-          tools/simple_hydrog/lakes \
-          tools/simple_hydrog/rmvpr
+          src
 
 SUBDIRS += man \
            tests
